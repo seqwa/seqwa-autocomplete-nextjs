@@ -58,11 +58,11 @@ INDEX_ID&query=QUERY_TEXT&highlightField=SEARCH_FIELD
   "suggestions": [
     {
       "suggest": "...",
-      "displaySuggest": "&lt;b&gt;....&lt;/b&gt; ..."
+      "displaySuggest": "<b>....</b>; ..."
     },
     {
       "suggest": "...",
-      "displaySuggest": "&lt;b&gt;....&lt;/b&gt; ..."
+      "displaySuggest": "<b>....</b> ..."
     }
   ],
   "relatedItems": [
