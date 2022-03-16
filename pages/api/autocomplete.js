@@ -6,14 +6,14 @@ export default async (req, res) => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'seqwa-api-key': 'ca3a6ba08d244a50ee43774b4e367c8876c214c4',
+      'seqwa-api-key': 'ca3a6ba08d244a50ee43774b4e367c8876c214c4', // Replace with your API Key
     },
   };
   const params = {
-    index: 'cde1d8e5-f0af-4498-801d-3ff82acec9c6',
+    index: 'cde1d8e5-f0af-4498-801d-3ff82acec9c6', // Replace with your Index Id
     query: input.query,
-    highlightField: 'title',
-    fields: ['title'],
+    highlightField: 'title', // Add the field that needs to highlighted
+    fields: [],
     maxResults: 25,
   };
 

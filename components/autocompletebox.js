@@ -17,6 +17,9 @@ export default function AutcompleteBox() {
 
   return (
     <div className="max-w-xl mx-auto px-4 pt-[15vh]">
+      <h1 className="text-5xl text-indigo-100 text-center mb-6">
+        Autocomplete
+      </h1>
       <Combobox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
           <div className="relative w-full text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-teal-300 focus-visible:ring-offset-2 sm:text-sm overflow-hidden">
@@ -45,11 +48,12 @@ export default function AutcompleteBox() {
                   Nothing found.
                 </div>
               ) : (
+                searchResults &&
                 searchResults.map((result, index) => (
                   <Combobox.Option
                     key={index}
                     className={({ active }) =>
-                      `cursor-default select-none relative py-2 pl-10 pr-4 text-xs ${
+                      `cursor-default select-none relative py-2 pl-10 pr-4 ${
                         active ? 'text-white bg-indigo-600' : 'text-gray-900'
                       }`
                     }
