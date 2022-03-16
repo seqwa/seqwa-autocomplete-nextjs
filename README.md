@@ -43,7 +43,7 @@ INDEX_ID&query=QUERY_TEXT&highlightField=SEARCH_FIELD
 | suggestions | Contains an array of suggestions for queries based on the query text. Each element of the array is an object with suggest and displaySuggest parameters. The suggest param is plain text and displaySuggest has highlighted words with the html <b> element. |
 | relatedItems | Contains an array of top tags from the search results. |
 | records | Top search results based on the search query and upto maximum number of results requested. |
-error | Returns an error message if any error occurs on the server.
+| error | Returns an error message if any error occurs on the server. |
 
 ### Response JSON Structure
 
