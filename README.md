@@ -25,11 +25,13 @@ GET
 
 ### Params
 
-| index | Index Id | required |
-| query | Query text entered by the user. Supports Lucene query parser syntax which includes AND, OR, and NOT operands, term query like fieldName:fieldValue, and range query like fieldName:[minFieldValue TO maxFieldValue] | required |
-| highlightField | Field for highlighting the query text | optional |
-| fields | Array of fields | optional |
-| maxResults | Maximum results to be returned. (Default: 10, Limit: 25) | optional |
+| Tables         |                                                                                                         Are                                                                                                         |     Cool |
+| -------------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------: |
+| index          |                                                                                                      Index Id                                                                                                       | required |
+| query          | Query text entered by the user. Supports Lucene query parser syntax which includes AND, OR, and NOT operands, term query like fieldName:fieldValue, and range query like fieldName:[minFieldValue TO maxFieldValue] | required |
+| highlightField |                                                                                        Field for highlighting the query text                                                                                        | optional |
+| fields         |                                                                                                   Array of fields                                                                                                   | optional |
+| maxResults     |                                                                              Maximum results to be returned. (Default: 10, Limit: 25)                                                                               | optional |
 
 ### Request URL Structure
 
