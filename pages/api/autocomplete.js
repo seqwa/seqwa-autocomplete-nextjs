@@ -6,11 +6,11 @@ export default async (req, res) => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'seqwa-api-key': 'c70ead7c322c17b3fc90989342e051ec7850eb70',
+      'seqwa-api-key': 'ca3a6ba08d244a50ee43774b4e367c8876c214c4',
     },
   };
   const params = {
-    index: '335871c6-2647-41aa-b842-a93be4b08ed3',
+    index: 'cde1d8e5-f0af-4498-801d-3ff82acec9c6',
     query: input.query,
     highlightField: 'title',
     fields: ['title'],

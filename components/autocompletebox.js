@@ -40,7 +40,7 @@ export default function AutcompleteBox() {
             afterLeave={() => setQuery('')}
           >
             <Combobox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-              {searchResults.length === 0 && query !== '' ? (
+              {searchResults && searchResults.length === 0 && query !== '' ? (
                 <div className="cursor-default select-none relative py-2 px-4 text-gray-700">
                   Nothing found.
                 </div>
