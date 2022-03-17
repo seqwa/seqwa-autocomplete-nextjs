@@ -4,10 +4,10 @@
 
 # Tech Stack
 
-[NextJS](https://nextjs.org/)
-[TailwindCSS](https://tailwindcss.com/)
-[HeadlessUI](https://headlessui.dev/)
-[Seqwa](https://www.seqwa.com/)
+- [NextJS](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [HeadlessUI](https://headlessui.dev/)
+- [Seqwa](https://www.seqwa.com/)
 
 # Autocomplete
 
