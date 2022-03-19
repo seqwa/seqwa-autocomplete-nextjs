@@ -17,10 +17,10 @@ export default async (req, res) => {
     maxResults: 25,
   };
 
-  const autocompletResponse = await fetch(
+  const autocompleteResponse = await fetch(
     'https://www.seqwa.com/api/v1/autocomplete?' + new URLSearchParams(params),
     options
   );
-  const response = await autocompletResponse.json();
+  const response = await autocompleteResponse.json();
   res.status(200).json(response);
 };
