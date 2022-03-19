@@ -12,7 +12,7 @@ export default async (req, res) => {
   const params = {
     index: 'cde1d8e5-f0af-4498-801d-3ff82acec9c6', // Replace with your Index Id
     query: input.query,
-    highlightField: 'title', // Add the field that needs to be highlighted. It is optional. By not setting this field you may end up with results from any field.
+    highlightField: 'title', // Include the field that needs to be highlighted for the suggestions. It is optional. By not setting this field you may end up with results from any field.
     fields: ['title', 'price', 'image', 'link'],
     maxResults: 25,
   };

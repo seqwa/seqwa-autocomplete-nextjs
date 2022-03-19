@@ -21,7 +21,7 @@ export default function AutcompleteBox() {
   };
 
   return (
-    <div className="max-w-xl mx-auto px-4 pt-[15vh]">
+    <div className="max-w-xl mx-auto px-4 pt-[5vh]">
       <h1 className="text-5xl text-indigo-100 text-center mb-6">
         Autocomplete
       </h1>
