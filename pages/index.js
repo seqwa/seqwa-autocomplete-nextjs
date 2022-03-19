@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import AutcompleteBox from '../components/autocompletebox';
+import AutocompleteBox from '../components/autocompletebox';
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Seqwa | Autocomplete</title>
       </Head>
-      <AutcompleteBox />
+      <AutocompleteBox />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react';
-import { Combobox, Transition, Tab, Popover } from '@headlessui/react';
+import { Combobox, Transition, Tab } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
-export default function AutcompleteBox() {
+export default function AutocompleteBox() {
   const [selected, setSelected] = useState();
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
