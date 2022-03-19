@@ -13,8 +13,8 @@ export default async (req, res) => {
     index: 'cde1d8e5-f0af-4498-801d-3ff82acec9c6', // Replace with your Index Id
     query: input.query,
     highlightField: 'title', // Add the field that needs to highlighted
-    fields: ['title'],
-    maxResults: 25,
+    fields: ['title', 'price', 'image', 'link'],
+    // maxResults: 25,
   };
 
   const autocompletResponse = await fetch(
