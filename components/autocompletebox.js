@@ -21,7 +21,7 @@ export default function AutcompleteBox() {
   };
 
   return (
-    <div className="max-w-xl mx-auto px-4 pt-[5vh]">
+    <div className="max-w-xl xl:max-w-5xl mx-auto px-4 pt-[5vh]">
       <h1 className="text-5xl text-indigo-100 text-center mb-6">
         Autocomplete
       </h1>
@@ -67,7 +67,7 @@ export default function AutcompleteBox() {
                   leave="transition ease-in duration-100"
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
-                  afterLeave={() => setQuery('')}
+                  // afterLeave={() => setQuery('')}
                 >
                   <Combobox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                     {searchResults &&
