@@ -132,40 +132,47 @@ export default function AutocompleteBox() {
                 onChange={(event) => autocomplete(event.target.value)}
               />
 
-              <div className=" rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 mt-2">
-                <div className="relative rounded-lg grid gap-8 bg-white p-7 lg:grid-cols-2">
-                  {searchResults &&
-                  searchResults.records &&
-                  searchResults.records.length === 0 &&
-                  query !== '' ? (
+              {searchResults &&
+              searchResults.records &&
+              searchResults.records.length === 0 &&
+              query !== '' ? (
+                <div className=" rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 mt-2">
+                  <div className="relative rounded-lg grid gap-8 bg-white p-7 lg:grid-cols-2">
                     <div className="cursor-default select-none relative py-2 px-4 text-gray-700">
                       Nothing found.
                     </div>
-                  ) : (
-                    searchResults &&
-                    searchResults.records &&
-                    searchResults.records.map((item, index) => (
-                      <a
-                        key={index}
-                        href={item.link}
-                        rel="noreferrer"
-                        target="_blank"
-                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 cursor-pointer"
-                      >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
-                          <img src={item.image} />
-                        </div>
-                        <div className="ml-4">
-                          <p className="text-sm font-medium text-gray-900">
-                            {item.title}
-                          </p>
-                          <p className="text-sm text-gray-500">{item.price}</p>
-                        </div>
-                      </a>
-                    ))
-                  )}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                searchResults &&
+                searchResults.records && (
+                  <div className=" rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 mt-2">
+                    <div className="relative rounded-lg grid gap-8 bg-white p-7 lg:grid-cols-2">
+                      {searchResults.records.map((item, index) => (
+                        <a
+                          key={index}
+                          href={item.link}
+                          rel="noreferrer"
+                          target="_blank"
+                          className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-slate-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50 cursor-pointer"
+                        >
+                          <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
+                            <img src={item.image} alt={item.title} />
+                          </div>
+                          <div className="ml-4">
+                            <p className="text-sm font-medium text-gray-900">
+                              {item.title}
+                            </p>
+                            <p className="text-sm text-gray-500">
+                              {item.price}
+                            </p>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )
+              )}
             </div>
           </Tab.Panel>
         </Tab.Panels>
