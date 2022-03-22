@@ -2,35 +2,41 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/seqwa-autocomplete-nextjs)
 
-# Tech Stack
+## About Seqwa
+
+Seqwa is a low-cost, easy-to-use, hosted search platform for solving your critical search requirements. It supports three uniquely beneficial functions: Autocomplete (query suggestions and top Full-text Search results), Search (Full-text Search with Semantic Ranking for intent), and Recommend (Intent-driven Semantic Search). Work with one or all the functions based on your needs. Set up a functional search utility in minutes: upload your data, generate API keys, publish a demo user interface, and search. Enjoy a seamless search experience supported by a highly available and scalable cloud infrastructure.
+
+To learn more, please visit: https://www.seqwa.com/
+
+## Tech Stack
 
 - [NextJS](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [HeadlessUI](https://headlessui.dev/)
 - [Seqwa](https://www.seqwa.com/)
 
-# Autocomplete
+## Autocomplete
 
 Autocomplete performs a fundamental and essential function to help users complete a search. Autocomplete offers query suggestions, related named entities, and top full-text search results.
 
 Implementing a user interface must include an API call for any change in the query, like adding or removing a character. Having a caching mechanism can considerably reduce the number of API calls.
 
-## Request URL
+### Request URL
 
 https://www.seqwa.com/api/v1/autocomplete
 
-## Method
+### Method
 
 GET
 
-## Headers
+### Headers
 
 | Header        | Description                            |
 | ------------- | -------------------------------------- |
 | Content-Type  | application/json                       |
 | seqwa-api-key | API KEY generated for the Autocomplete |
 
-## Function
+### Function
 
 ### Params
 
